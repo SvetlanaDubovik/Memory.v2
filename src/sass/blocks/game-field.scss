@@ -1,0 +1,20 @@
+@import "../../sass/_variables";
+
+.game-field {
+  margin: 0 auto;
+  width: 700px;
+}
+
+.game-field__settings {
+  padding: 80px 0 10px;
+  display: flex;
+  justify-content: space-between;
+  
+  .game-field__settings_score {
+    font-size: 14px;
+    color: $white;
+    opacity: 0.8;
+    letter-spacing: 0;
+    padding: 0 5px;
+  }  
+}

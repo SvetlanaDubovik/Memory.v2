@@ -1,0 +1,14 @@
+@mixin img-size() {
+  width: 320px;
+  height: 160px;
+}
+
+@mixin header-settings($font-size, $padding-bottom, $text-transform) {
+  text-transform: $text-transform;
+  font-size: $font-size;
+  text-align: center;
+  line-height: 38px;
+  letter-spacing: 0.2px;
+  opacity: 0.85;
+  padding-bottom: $padding-bottom;  
+}

@@ -1,0 +1,29 @@
+@import "../../sass/_variables";
+@import "../../sass/_mixins";
+
+.end-page__picture {
+  padding-top: 7%;  
+    
+  img {
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 580px ) {  
+  
+  .end-page__picture img {
+    @include img-size();
+  }  
+}
+
+.end-page {
+  position: relative;
+  
+  .btnSquare {
+    position: relative;
+    margin: 0 auto;
+    padding: 10px 30px;
+    z-index: 10;
+  }  
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="../dist/css/main.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="../dist/img/favicon.ico" type="image/x-icon">
+  <title>Memory</title>
+</head>
+<body>
+  <main>
+    <audio src="../src/media/pinkPantera.mp3" autoplay loop id="backgroundMusic"></audio>
+    <div class="start-page" id="startPage">
+      <div class="start-page__picture">
+        <img src="../dist/img/StartGame.png" srcset="../dist/img/StartGame@2x.png 2x" alt="Игра Memory" width="503"
+          height="262">
+      </div>
+      <h1>Memory game</h1>
+      <button class="btn btnSquare" id="startGame">Начать игру</button>
+    </div>
+    <div class="game-page hidden" id="gamePage">
+      <div class="game-field">
+        <div class="game-field__settings">
+          <button class="btn" id="reloadGame">Начать заново</button>
+          <div class="game-field__settings_score" id="score">Очки: <span>0</span></div>
+        </div>
+        <div class="cards-container" id="cardsContainer">
+          <div class="cards-container__item js-cards-container__item"></div>
+          <div class="cards-container__item js-cards-container__item"></div>
+          <div class="cards-container__item js-cards-container__item"></div>
+          <div class="cards-container__item js-cards-container__item"></div>
+          <div class="cards-container__item js-cards-container__item"></div>
+          <div class="cards-container__item js-cards-container__item"></div>
+          <div class="cards-container__item js-cards-container__item"></div>
+          <div class="cards-container__item js-cards-container__item"></div>
+          <div class="cards-container__item js-cards-container__item"></div>
+          <div class="cards-container__item js-cards-container__item"></div>
+          <div class="cards-container__item js-cards-container__item"></div>
+          <div class="cards-container__item js-cards-container__item"></div>
+          <div class="cards-container__item js-cards-container__item"></div>
+          <div class="cards-container__item js-cards-container__item"></div>
+          <div class="cards-container__item js-cards-container__item"></div>
+          <div class="cards-container__item js-cards-container__item"></div>
+          <div class="cards-container__item js-cards-container__item"></div>
+          <div class="cards-container__item js-cards-container__item"></div>
+        </div>
+      </div>
+      <audio id="successSound" src="../dist/media/success.mp3"></audio>
+    </div>
+    <div class="end-page hidden" id="endPage">
+      <div class="end-page__picture">
+        <img src="../dist/img/Group%202.png" srcset="../src/img/Group%202@2x.png" alt="Конец игры Memory" width="516"
+          height="275">
+      </div>
+      <h2 class="js-end-page__header">Поздравляем!</h2>
+      <h2 class="js-end-page__header">Ваш итоговый счет: <span></span></h2>
+      <button class="btn btnSquare" id="gameAgain">Еще раз</button>
+    </div>
+  </main>
+  <script src="../dist/js/main.min.js"></script>
+</body>
+</html>

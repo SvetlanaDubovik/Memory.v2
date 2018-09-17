@@ -1,0 +1,15 @@
+@import "../../sass/_variables";
+@import "../../sass/_mixins";
+
+.cards-container {
+    margin-left: 10px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-auto-rows: 140px;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+}
+
+.cards-container__item {
+    position: relative;
+}
