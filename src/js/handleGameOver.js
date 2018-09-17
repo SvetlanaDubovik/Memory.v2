@@ -21,6 +21,8 @@ export const  handleGameOver = finalCount => {
     backgroundMusic.src = '../dist/media/silent.mp3';
     endPageHeader[0].textContent = '';
   }
+  
+  backgroundMusic.play();
 
   const gameAgain = document.querySelector('#gameAgain');
   gameAgain.addEventListener('click', () => {

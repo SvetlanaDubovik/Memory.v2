@@ -25,7 +25,7 @@ export const handleStartGame = () => {
   });
 
   backgroundMusic.src = '../dist/media/pinkPantera.mp3';
-  
+  backgroundMusic.play();
   game.startNew();
 
   const btnReload = document.querySelector('#reloadGame');
